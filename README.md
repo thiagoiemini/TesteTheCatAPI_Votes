@@ -18,32 +18,32 @@
 		</dependency>
   
 		<dependency>
-				<groupId>io.rest-assured</groupId>
-				<artifactId>rest-assured</artifactId>
-				<version>5.4.0</version>
-				<scope>test</scope>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>5.4.0</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
-				<groupId>org.testng</groupId>
-				<artifactId>testng</artifactId>
-				<version>7.7.0</version>
-				<scope>test</scope>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.7.0</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
-				<groupId>io.rest-assured</groupId>
-				<artifactId>json-path</artifactId>
-				<version>5.4.0</version>
-				<scope>test</scope>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>5.4.0</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
-				<groupId>io.rest-assured</groupId>
-				<artifactId>json-schema-validator</artifactId>
-				<version>5.4.0</version>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>5.4.0</version>
 		</dependency>
 		<dependency>
-				<groupId>com.googlecode.json-simple</groupId>
-				<artifactId>json-simple</artifactId>
-				<version>1.1.1</version>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
 		</dependency>
 
 ## Sobre o teste
@@ -63,3 +63,21 @@
   
 	https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=R0qdMcvVV
 	https://documenter.getpostman.com/view/5578104/RWgqUxxh#fc3df122-ea8f-4cad-aa4f-32d06d62d02c
+
+## Melhorias identificadas no Votes
+- Melhorias Autenticação:
+
+  		Poderia trabalhar com geração de Token;
+
+- Melhorias GET Votes:
+
+		Retorno de N mais votados com ordenação DESC ou ASC - onde N é a quantidade limite desejada;
+		Filtros por image_id - Exemplo: saber quantos usuarios interagiram com esta imagem;
+		Filtros por image_id com sub_id - Exemplo: saber se usuario interagiu com a imagem mais de uma vez, like e deslike;
+		Filtros por regiao country_code;
+
+- Melhorias GET Votes:
+
+		Ao passar value deveria somar ou subtrair ao invés de setar o valor;
+		Criar um param somarVote=N para somar N votos;
+		Criar um param subVote=N para subtrair N votos;
